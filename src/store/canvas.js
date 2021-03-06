@@ -1,0 +1,22 @@
+export const state = {
+  data: {
+    scale: 1,
+    lineName: 'curve',
+    fromArrowType: '',
+    toArrowType: 'triangleSolid',
+    locked: 0
+  }
+}
+
+const mutations = {
+  data(state, data) {
+    state.data = data
+  }
+}
+
+// 最后统一导出
+export default {
+  namespaced: true,
+  state,
+  mutations
+}
